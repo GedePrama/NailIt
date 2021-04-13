@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" restorationIdentifier="GeneralCollectionView" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ouZ-bh-xcu">
-                                <rect key="frame" x="20" y="159" width="214" height="683"/>
+                                <rect key="frame" x="20" y="159" width="374" height="683"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="16" minimumInteritemSpacing="0.0" id="R6M-hK-awc">
                                     <size key="itemSize" width="172" height="172"/>
@@ -31,7 +31,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="GeneralCollectionViewCell" reuseIdentifier="GeneralCollectionViewCell" id="O7O-Im-q2R" customClass="GeneralCollectionViewCell" customModule="Nailit" customModuleProvider="target">
-                                        <rect key="frame" x="21" y="0.0" width="172" height="172"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="172" height="172"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="3cf-pN-ZF5">
                                             <rect key="frame" x="0.0" y="0.0" width="172" height="172"/>
@@ -121,7 +121,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="thV-2m-L74" firstAttribute="top" secondItem="0aZ-qb-kt8" secondAttribute="top" constant="20" id="5a3-qp-zCd"/>
-                            <constraint firstItem="0aZ-qb-kt8" firstAttribute="trailing" secondItem="ouZ-bh-xcu" secondAttribute="trailing" constant="180" id="AZC-2f-C9s"/>
+                            <constraint firstItem="0aZ-qb-kt8" firstAttribute="trailing" secondItem="ouZ-bh-xcu" secondAttribute="trailing" constant="20" id="AZC-2f-C9s"/>
                             <constraint firstItem="0aZ-qb-kt8" firstAttribute="bottom" secondItem="ouZ-bh-xcu" secondAttribute="bottom" constant="20" id="CEd-JM-yfE"/>
                             <constraint firstItem="skN-Pj-MIR" firstAttribute="top" secondItem="thV-2m-L74" secondAttribute="bottom" constant="20" id="E91-1c-XYg"/>
                             <constraint firstItem="thV-2m-L74" firstAttribute="leading" secondItem="0aZ-qb-kt8" secondAttribute="leading" constant="20" id="ThC-XX-j3H"/>
