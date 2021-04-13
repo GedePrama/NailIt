@@ -11,9 +11,12 @@ import CoreData
 class NoteDetailViewController: UIViewController {
     
     
+    
+    
+
     @IBOutlet weak var questionLabel: UILabel!
-    @IBOutlet weak var questionDetail1: UITextView!
-    @IBOutlet weak var questionDetail2: UITextView!
+    @IBOutlet weak var questionDetail1: UILabel!
+    @IBOutlet weak var questionDetail2: UILabel!
     
     
     
