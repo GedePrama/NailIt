@@ -11,9 +11,10 @@ import CoreData
 class QuestionDetailViewController: UIViewController {
     
     @IBOutlet weak var questionTitle: UILabel!
-    @IBOutlet weak var detailQuestion1: UITextView!
-    @IBOutlet weak var detailQuestion2: UITextView!
     
+    @IBOutlet weak var detailQuestion1: UILabel!
+    
+    @IBOutlet weak var detailQuestion2: UILabel!
     
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     var  question = ""
@@ -25,7 +26,7 @@ class QuestionDetailViewController: UIViewController {
         super.viewDidLoad()
         questionTitle.text = question
         detailQuestion1.text = questionDetail1
-        detailQuestion2.text = questionDetail2
+        detailQuestion2.text = "\(questionDetail2)\(questionDetail2)"
     }
     
     // tombol bookmark disentuh atas dalam
