@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D91" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ListOfQuestion" representedClassName="ListOfQuestion" syncable="YES" codeGenerationType="class">
+        <attribute name="bookmark" optional="YES" attributeType="Boolean" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="category" attributeType="String"/>
+        <attribute name="categoryDetail" attributeType="String"/>
+        <attribute name="notes" optional="YES" attributeType="String"/>
+        <attribute name="question" attributeType="String"/>
+        <attribute name="questionDetail1" attributeType="String"/>
+        <attribute name="questionDetail2" optional="YES" attributeType="String"/>
+        <attribute name="video" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="ListOfQuestion" positionX="146.5265502929688" positionY="-226.8826293945312" width="128" height="163"/>
+    </elements>
+</model>
