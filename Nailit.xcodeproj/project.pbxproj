@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE917D242625887800D61743 /* VideoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE917D232625887800D61743 /* VideoHelper.swift */; };
+		AE917D272625888700D61743 /* SimulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE917D262625888700D61743 /* SimulationViewController.swift */; };
+		AE917D2A2625888F00D61743 /* StartSimulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE917D292625888F00D61743 /* StartSimulationViewController.swift */; };
+		AE917D3126258DFE00D61743 /* AboutSimulationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE917D3026258DFE00D61743 /* AboutSimulationTableViewCell.swift */; };
+		AE917D3426258E3100D61743 /* BookmarkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE917D3326258E3100D61743 /* BookmarkModel.swift */; };
 		B7107A352621AA53003D35A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7107A342621AA53003D35A2 /* AppDelegate.swift */; };
 		B7107A372621AA53003D35A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7107A362621AA53003D35A2 /* SceneDelegate.swift */; };
 		B7107A3C2621AA53003D35A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7107A3A2621AA53003D35A2 /* Main.storyboard */; };
@@ -29,6 +34,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE917D232625887800D61743 /* VideoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoHelper.swift; sourceTree = "<group>"; };
+		AE917D262625888700D61743 /* SimulationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimulationViewController.swift; sourceTree = "<group>"; };
+		AE917D292625888F00D61743 /* StartSimulationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartSimulationViewController.swift; sourceTree = "<group>"; };
+		AE917D3026258DFE00D61743 /* AboutSimulationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutSimulationTableViewCell.swift; sourceTree = "<group>"; };
+		AE917D3326258E3100D61743 /* BookmarkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarkModel.swift; sourceTree = "<group>"; };
 		B7107A312621AA53003D35A2 /* Nailit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nailit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7107A342621AA53003D35A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7107A362621AA53003D35A2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +105,7 @@
 		B72BAB0D2624202900194EAB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AE917D3326258E3100D61743 /* BookmarkModel.swift */,
 				B7107A342621AA53003D35A2 /* AppDelegate.swift */,
 				B7107A3D2621AA53003D35A2 /* Nailit.xcdatamodeld */,
 				B7107A362621AA53003D35A2 /* SceneDelegate.swift */,
@@ -123,6 +134,8 @@
 				B72BAB132625164400194EAB /* BookmarkTableViewController.swift */,
 				B72BAB0A26240B0600194EAB /* NoteViewController.swift */,
 				B72BAB302625789400194EAB /* NoteDetailViewController.swift */,
+				AE917D262625888700D61743 /* SimulationViewController.swift */,
+				AE917D292625888F00D61743 /* StartSimulationViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -130,10 +143,12 @@
 		B72BAB102624209000194EAB /* Trash */ = {
 			isa = PBXGroup;
 			children = (
+				AE917D232625887800D61743 /* VideoHelper.swift */,
 				B72BAAF7262320EF00194EAB /* GeneralCollectionViewCell.swift */,
 				B7107A682621BE52003D35A2 /* TechnicalCollectionViewCell.swift */,
 				B72BAB012623C8C100194EAB /* UserDefault.swift */,
 				B72BAB2D262558EF00194EAB /* NotesTableViewCell.swift */,
+				AE917D3026258DFE00D61743 /* AboutSimulationTableViewCell.swift */,
 			);
 			path = Trash;
 			sourceTree = "<group>";
@@ -211,15 +226,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE917D2A2625888F00D61743 /* StartSimulationViewController.swift in Sources */,
 				B72BAB022623C8C100194EAB /* UserDefault.swift in Sources */,
 				B72BAB312625789400194EAB /* NoteDetailViewController.swift in Sources */,
 				B7107A692621BE52003D35A2 /* TechnicalCollectionViewCell.swift in Sources */,
+				AE917D272625888700D61743 /* SimulationViewController.swift in Sources */,
 				B72BAAF8262320EF00194EAB /* GeneralCollectionViewCell.swift in Sources */,
 				B72BAB0B26240B0600194EAB /* NoteViewController.swift in Sources */,
 				B72BAB052623DC2300194EAB /* QuestionDetailViewController.swift in Sources */,
 				B7107A3F2621AA53003D35A2 /* Nailit.xcdatamodeld in Sources */,
 				B72BAAFB262349DE00194EAB /* ListOfQuestionTableViewController.swift in Sources */,
 				B7107A352621AA53003D35A2 /* AppDelegate.swift in Sources */,
+				AE917D3426258E3100D61743 /* BookmarkModel.swift in Sources */,
+				AE917D242625887800D61743 /* VideoHelper.swift in Sources */,
+				AE917D3126258DFE00D61743 /* AboutSimulationTableViewCell.swift in Sources */,
 				B72BAB142625164400194EAB /* BookmarkTableViewController.swift in Sources */,
 				B7107A372621AA53003D35A2 /* SceneDelegate.swift in Sources */,
 				B7107A5E2621B719003D35A2 /* HomeViewController.swift in Sources */,
@@ -387,13 +407,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N2RYUMZFPK;
+				DEVELOPMENT_TEAM = 4VR7S48W5N;
 				INFOPLIST_FILE = Nailit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Metrics.Nailit;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pooya.brain.dev.IOS-Swift-VideoRecordAndPlay";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -406,13 +426,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N2RYUMZFPK;
+				DEVELOPMENT_TEAM = 4VR7S48W5N;
 				INFOPLIST_FILE = Nailit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Metrics.Nailit;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pooya.brain.dev.IOS-Swift-VideoRecordAndPlay";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
