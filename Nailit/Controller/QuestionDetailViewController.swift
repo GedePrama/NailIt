@@ -7,11 +7,13 @@
 
 import UIKit
 import CoreData
-
+import AVFoundation
+import AVKit
 
 class QuestionDetailViewController: UIViewController {
     
-
+    @IBOutlet weak var videoView: UIView!
+    
     @IBOutlet weak var bookmarkLogo: UIBarButtonItem!
     
     @IBOutlet weak var questionTitle: UILabel!
@@ -26,13 +28,29 @@ class QuestionDetailViewController: UIViewController {
     var questionDetail2 = ""
     var arrayDetailQuestion = [ListOfQuestion]()
     var bookmark = false
+    var videoLink = ""
+    var player: AVPlayer!
+    var avpController = AVPlayerViewController()
     
     override func viewDidLoad() {
-        super.viewDidLoad()
+       super.viewDidLoad()
         questionTitle.text = question
         detailQuestion1.text = questionDetail1
-        detailQuestion2.text = "\(questionDetail2)\(questionDetail2)"
-    }
+        detailQuestion2.text = questionDetail2
+        if videoLink != ""{
+            let moviePath = Bundle.main.path(forResource: videoLink, ofType: "mp4")
+            if let path = moviePath {
+                let url = NSURL.fileURL(withPath: path)
+                self.player = AVPlayer(url: url)
+                self.avpController = AVPlayerViewController()
+                self.avpController.player = self.player
+                avpController.view.frame = videoView.frame
+                self.addChild(avpController)
+                self.view.addSubview(avpController.view)
+            }
+       }
+       // Do any additional setup after loading the view.
+   }
     
     override func viewWillAppear(_ animated: Bool) {
         if bookmark{

@@ -31,6 +31,8 @@
 		B72BAB212625471200194EAB /* Simulation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B72BAB1F2625471200194EAB /* Simulation.storyboard */; };
 		B72BAB2E262558EF00194EAB /* NotesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72BAB2D262558EF00194EAB /* NotesTableViewCell.swift */; };
 		B72BAB312625789400194EAB /* NoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72BAB302625789400194EAB /* NoteDetailViewController.swift */; };
+		B72BAB702627690F00194EAB /* ProtocolInSwift.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B72BAB6F2627690F00194EAB /* ProtocolInSwift.mp4 */; };
+		B72BAB732627691D00194EAB /* WhatIsYourStrength.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B72BAB722627691D00194EAB /* WhatIsYourStrength.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +62,8 @@
 		B72BAB202625471200194EAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Nailit/View/Base.lproj/Simulation.storyboard; sourceTree = "<group>"; };
 		B72BAB2D262558EF00194EAB /* NotesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewCell.swift; sourceTree = "<group>"; };
 		B72BAB302625789400194EAB /* NoteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailViewController.swift; sourceTree = "<group>"; };
+		B72BAB6F2627690F00194EAB /* ProtocolInSwift.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProtocolInSwift.mp4; sourceTree = "<group>"; };
+		B72BAB722627691D00194EAB /* WhatIsYourStrength.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = WhatIsYourStrength.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +153,8 @@
 				B72BAB012623C8C100194EAB /* UserDefault.swift */,
 				B72BAB2D262558EF00194EAB /* NotesTableViewCell.swift */,
 				AE917D3026258DFE00D61743 /* AboutSimulationTableViewCell.swift */,
+				B72BAB722627691D00194EAB /* WhatIsYourStrength.mp4 */,
+				B72BAB6F2627690F00194EAB /* ProtocolInSwift.mp4 */,
 			);
 			path = Trash;
 			sourceTree = "<group>";
@@ -211,8 +217,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7107A442621AA54003D35A2 /* LaunchScreen.storyboard in Resources */,
+				B72BAB732627691D00194EAB /* WhatIsYourStrength.mp4 in Resources */,
 				B72BAB212625471200194EAB /* Simulation.storyboard in Resources */,
 				B72BAB1D262546F200194EAB /* Bookmark.storyboard in Resources */,
+				B72BAB702627690F00194EAB /* ProtocolInSwift.mp4 in Resources */,
 				B7107A412621AA54003D35A2 /* Assets.xcassets in Resources */,
 				B72BAB192625466B00194EAB /* Question.storyboard in Resources */,
 				B7107A3C2621AA53003D35A2 /* Main.storyboard in Resources */,
