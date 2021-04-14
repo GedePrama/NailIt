@@ -302,9 +302,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="b7m-nE-pap">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="b7m-nE-pap">
                                 <rect key="frame" x="20" y="153" width="374" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Technical"/>
                                     <segment title="General"/>
@@ -313,7 +312,7 @@
                                     <action selector="HomeSegmentedControl:" destination="m9X-jd-pI5" eventType="valueChanged" id="SMm-SN-LZl"/>
                                 </connections>
                             </segmentedControl>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" ambiguous="YES" restorationIdentifier="TechnicalCollectionView" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="JqI-FD-fa6" userLabel="Technical Collection View">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" restorationIdentifier="TechnicalCollectionView" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="JqI-FD-fa6" userLabel="Technical Collection View">
                                 <rect key="frame" x="20" y="220" width="374" height="602"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="12" minimumInteritemSpacing="0.0" id="EUj-bB-ABT">
@@ -356,9 +355,12 @@
                                     <outlet property="delegate" destination="m9X-jd-pI5" id="s5n-j6-n9d"/>
                                 </connections>
                             </collectionView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" ambiguous="YES" restorationIdentifier="GeneralCollectionView" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="pX1-5M-prK">
-                                <rect key="frame" x="20" y="192" width="374" height="602"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" restorationIdentifier="GeneralCollectionView" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="pX1-5M-prK">
+                                <rect key="frame" x="20" y="220" width="374" height="602"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="602" id="H5y-dz-5Od"/>
+                                </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="12" minimumInteritemSpacing="0.0" id="jfM-dy-uVQ">
                                     <size key="itemSize" width="168" height="168"/>
                                     <size key="estimatedItemSize" width="172" height="172"/>
@@ -404,10 +406,16 @@
                         <viewLayoutGuide key="safeArea" id="juE-BP-yeS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="pX1-5M-prK" firstAttribute="leading" secondItem="b7m-nE-pap" secondAttribute="leading" id="4dO-jp-cFo"/>
+                            <constraint firstItem="pX1-5M-prK" firstAttribute="leading" secondItem="p6O-19-ylS" secondAttribute="leadingMargin" id="889-5o-AmS"/>
                             <constraint firstItem="JqI-FD-fa6" firstAttribute="leading" secondItem="pX1-5M-prK" secondAttribute="leading" id="EAY-IE-rJ3"/>
+                            <constraint firstItem="juE-BP-yeS" firstAttribute="bottom" secondItem="JqI-FD-fa6" secondAttribute="bottom" constant="40" id="KSh-1L-CCS"/>
+                            <constraint firstItem="pX1-5M-prK" firstAttribute="trailing" secondItem="b7m-nE-pap" secondAttribute="trailing" id="M78-Mr-GMF"/>
                             <constraint firstItem="JqI-FD-fa6" firstAttribute="top" secondItem="pX1-5M-prK" secondAttribute="top" id="SIx-x9-7gO"/>
                             <constraint firstItem="JqI-FD-fa6" firstAttribute="bottom" secondItem="pX1-5M-prK" secondAttribute="bottom" id="j6a-yC-U7O"/>
+                            <constraint firstItem="pX1-5M-prK" firstAttribute="trailing" secondItem="p6O-19-ylS" secondAttribute="trailingMargin" id="q48-WP-i2a"/>
                             <constraint firstItem="JqI-FD-fa6" firstAttribute="trailing" secondItem="pX1-5M-prK" secondAttribute="trailing" id="qDE-UM-CAZ"/>
+                            <constraint firstItem="pX1-5M-prK" firstAttribute="top" secondItem="b7m-nE-pap" secondAttribute="bottom" constant="8" id="tN4-EG-6vu"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1Y4-yd-oQy"/>

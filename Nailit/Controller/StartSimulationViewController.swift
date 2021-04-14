@@ -82,7 +82,7 @@ class StartSimulationViewController: UIViewController {
         if i < arraySimulation.count{
             VideoHelper.startMediaBrowser(delegate: self, sourceType: .camera)
         }else{
-            startButton.setTitle("Finish", for: .normal)
+            startButton.setTitle("Finish", for: UIControl.State.normal)
             navigationController?.popViewController(animated: true)
         }
         
