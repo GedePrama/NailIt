@@ -81,7 +81,7 @@
                                                 <rect key="frame" x="20" y="166.66666666666666" width="350" height="20.333333333333343"/>
                                                 <color key="backgroundColor" name="color4"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
