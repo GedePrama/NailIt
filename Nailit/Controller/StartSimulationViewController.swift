@@ -9,12 +9,20 @@ import UIKit
 import AVFoundation
 import MobileCoreServices
 import AVKit
+import CoreData
 
 class StartSimulationViewController: UIViewController {
-
+    @IBOutlet weak var fotoDicky: UIImageView!
+    
+    
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    var arraySimulation = [ListOfQuestion]()
+    var botrue = true
+    var i = 0
     
     let imagePickerController = UIImagePickerController()
     var videoURL : URL?
+
     @IBOutlet weak var questionLbl: UILabel!
     
     @objc func video(
@@ -41,11 +49,47 @@ class StartSimulationViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        loadSimulation()
+        questionLbl.text = arraySimulation[0].question!
+    }
+    
+    func loadSimulation(){
+        let request : NSFetchRequest<ListOfQuestion> = ListOfQuestion.fetchRequest()
+        let bookmarkPredicate = NSPredicate(format: "bookmark == %d", botrue)
+        request.predicate = bookmarkPredicate
+        request.sortDescriptors = [NSSortDescriptor(key: "question", ascending: true)]
+        
+        do {
+            arraySimulation = try context.fetch(request)
+        } catch {
+            print("Error fetching data from context \(error)")
+        }
+    }
+    
+    
     @IBAction func record(_ sender: AnyObject) {
+        UIView.animate(withDuration: 3, animations: {
+            self.fotoDicky.frame.origin.y -= 400
+        }, completion: nil)
       VideoHelper.startMediaBrowser(delegate: self, sourceType: .camera)
     }
 
-    
+    @IBAction func nextQuestion(_ sender: UIButton) {
+        print("button click")
+        i += 1
+        if i < arraySimulation.count{
+            UIView.transition(with: questionLbl,
+                              duration: 0.5,
+                           options: .transitionCrossDissolve,
+                        animations: { [weak self] in
+                            self?.questionLbl.text = self?.arraySimulation[self!.i].question
+                     }, completion: nil)
+        }
+        else{
+            questionLbl.text = "Udah kelar woi jangan di next lagi"
+        }
+    }
   
     //
     /*
@@ -131,4 +175,5 @@ extension StartSimulationViewController: UIImagePickerControllerDelegate {
 
 // MARK: - UINavigationControllerDelegate
 extension StartSimulationViewController: UINavigationControllerDelegate {
+    
 }

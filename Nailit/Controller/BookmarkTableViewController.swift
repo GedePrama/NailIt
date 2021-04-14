@@ -12,7 +12,7 @@ class BookmarkTableViewController: UITableViewController {
 
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     var arrayBookmark = [ListOfQuestion]()
-    var bo = true
+    var botrue = true
     var select = 0
     var selected = 0
     
@@ -71,7 +71,7 @@ class BookmarkTableViewController: UITableViewController {
     
     func loadBookmark(){
         let request : NSFetchRequest<ListOfQuestion> = ListOfQuestion.fetchRequest()
-        let bookmarkPredicate = NSPredicate(format: "bookmark == %d", bo)
+        let bookmarkPredicate = NSPredicate(format: "bookmark == %d", botrue)
         request.predicate = bookmarkPredicate
         request.sortDescriptors = [NSSortDescriptor(key: "question", ascending: true)]
         
