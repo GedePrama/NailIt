@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" restorationIdentifier="GeneralCollectionView" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ouZ-bh-xcu">
-                                <rect key="frame" x="20" y="115" width="374" height="727"/>
+                                <rect key="frame" x="20" y="159" width="374" height="683"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="12" minimumInteritemSpacing="0.0" id="R6M-hK-awc">
                                     <size key="itemSize" width="168" height="168"/>
@@ -64,7 +64,7 @@
                                 </connections>
                             </collectionView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" restorationIdentifier="TechnicalCollectionView" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="skN-Pj-MIR" userLabel="Technical Collection View">
-                                <rect key="frame" x="20" y="115" width="374" height="727"/>
+                                <rect key="frame" x="20" y="159" width="374" height="683"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="12" minimumInteritemSpacing="0.0" id="0oI-YL-1O4">
                                     <size key="itemSize" width="168" height="168"/>
@@ -107,7 +107,7 @@
                                 </connections>
                             </collectionView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="thV-2m-L74">
-                                <rect key="frame" x="20" y="64" width="374" height="32"/>
+                                <rect key="frame" x="20" y="108" width="374" height="32"/>
                                 <segments>
                                     <segment title="Technical"/>
                                     <segment title="General"/>
@@ -137,6 +137,7 @@
                     <connections>
                         <outlet property="generalCollectionView" destination="ouZ-bh-xcu" id="0ig-Xe-pFC"/>
                         <outlet property="technicalCollectionView" destination="skN-Pj-MIR" id="veX-oR-yJ5"/>
+                        <segue destination="dHc-gB-fTB" kind="show" id="89x-Op-ZoG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wFW-Dg-snL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -286,7 +287,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </toolbar>
                     <connections>
-                        <segue destination="LMB-Gy-mJ2" kind="relationship" relationship="rootViewController" id="5F1-YK-r9Q"/>
+                        <segue destination="m9X-jd-pI5" kind="relationship" relationship="rootViewController" id="8k3-2q-Pc0"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yQ5-iP-kti" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -410,9 +411,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1Y4-yd-oQy"/>
-                    <connections>
-                        <segue destination="dHc-gB-fTB" kind="show" id="OJ2-bi-4Xa"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z7S-HL-QpW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
