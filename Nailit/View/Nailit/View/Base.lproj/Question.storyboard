@@ -118,7 +118,7 @@
                             </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0aZ-qb-kt8"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="thV-2m-L74" firstAttribute="top" secondItem="0aZ-qb-kt8" secondAttribute="top" constant="20" id="5a3-qp-zCd"/>
                             <constraint firstItem="0aZ-qb-kt8" firstAttribute="trailing" secondItem="ouZ-bh-xcu" secondAttribute="trailing" constant="20" id="AZC-2f-C9s"/>
@@ -259,13 +259,14 @@
                         <barButtonItem key="rightBarButtonItem" title="Bookmark" id="DBl-Lz-Ey9">
                             <imageReference key="image" image="bookmark" catalog="system" symbolScale="large"/>
                             <connections>
-                                <action selector="bookmarkButtonOnClick:" destination="n7X-Zz-OIe" id="DZL-HI-m8d"/>
+                                <action selector="clicked:" destination="n7X-Zz-OIe" id="r1R-tM-uhd"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="detailQuestion1" destination="Ecd-5y-XAo" id="RWf-kK-BPi"/>
                         <outlet property="detailQuestion2" destination="fGL-NZ-H3Z" id="5yP-HY-Lkw"/>
+                        <outlet property="imageButton" destination="DBl-Lz-Ey9" id="IBB-wM-Imj"/>
                         <outlet property="questionTitle" destination="CfY-9q-xUw" id="SPh-0u-2e6"/>
                     </connections>
                 </viewController>
