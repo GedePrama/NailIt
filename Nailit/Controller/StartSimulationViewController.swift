@@ -12,7 +12,6 @@ import AVKit
 import CoreData
 
 class StartSimulationViewController: UIViewController {
-   // @IBOutlet weak var fotoDicky: UIImageView!
     
     
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
@@ -78,11 +77,9 @@ class StartSimulationViewController: UIViewController {
         //UIView.animate(withDuration: 3, animations: {
         //    self.fotoDicky.frame.origin.y -= 400
         //}, completion: nil)
-        i += 1
         if i < arraySimulation.count{
             VideoHelper.startMediaBrowser(delegate: self, sourceType: .camera)
         }else{
-            startButton.setTitle("Finish", for: UIControl.State.normal)
             navigationController?.popViewController(animated: true)
         }
         
@@ -100,6 +97,7 @@ class StartSimulationViewController: UIViewController {
                      }, completion: nil)
         }
         else{
+            startButton.setTitle("Finish", for: UIControl.State.normal)
             questionLbl.text = "Finish"
         }
     }

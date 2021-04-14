@@ -21,6 +21,7 @@ class HomeViewController: UIViewController,UICollectionViewDataSource,UICollecti
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        generalCollectionView.isHidden = true
         //navigationController?.navigationBar.barTintColor = UIColor.blue
         
         //gajalan ini
@@ -48,9 +49,9 @@ class HomeViewController: UIViewController,UICollectionViewDataSource,UICollecti
     
     @IBAction func HomeSegmentedControl(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0{
-            technicalCollectionView.isHidden = false
+            generalCollectionView.isHidden = true
         } else{
-            technicalCollectionView.isHidden = true
+            generalCollectionView.isHidden = false
         }
     }
     
