@@ -20,6 +20,16 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>Nailit would like to access to your Media Library.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Nailit would like to use your camera.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Nailit would like to access your microphone.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Nailit would like to save to your Photo Library.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Nailit would like to access to your Photo Library.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -39,16 +49,6 @@
 			</array>
 		</dict>
 	</dict>
-	<key>NSAppleMusicUsageDescription</key>
-	<string>Nailit would like to access to your Media Library.</string>
-	<key>NSCameraUsageDescription</key>
-	<string>Nailit would like to use your camera.</string>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>Nailit would like to access your microphone.</string>
-	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>Nailit would like to save to your Photo Library.</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Nailit would like to access to your Photo Library.</string>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
