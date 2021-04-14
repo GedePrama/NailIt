@@ -164,6 +164,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="questionLbl" destination="9Mh-gd-qwn" id="RvY-Zu-qfb"/>
+                        <outlet property="startButton" destination="oja-QH-GBE" id="3Fm-lQ-sZU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5wo-xN-1c7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

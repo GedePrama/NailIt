@@ -24,6 +24,7 @@ class StartSimulationViewController: UIViewController {
     var videoURL : URL?
 
     @IBOutlet weak var questionLbl: UILabel!
+    @IBOutlet weak var startButton: UIButton!
     
     @objc func video(
       _ videoPath: String,
@@ -77,7 +78,14 @@ class StartSimulationViewController: UIViewController {
         //UIView.animate(withDuration: 3, animations: {
         //    self.fotoDicky.frame.origin.y -= 400
         //}, completion: nil)
-      VideoHelper.startMediaBrowser(delegate: self, sourceType: .camera)
+        i += 1
+        if i < arraySimulation.count{
+            VideoHelper.startMediaBrowser(delegate: self, sourceType: .camera)
+        }else{
+            startButton.setTitle("Finish", for: .normal)
+            navigationController?.popViewController(animated: true)
+        }
+        
     }
 
     @IBAction func nextQuestion(_ sender: UIButton) {
