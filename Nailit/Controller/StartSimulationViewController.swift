@@ -50,8 +50,13 @@ class StartSimulationViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        
         loadSimulation()
-        questionLbl.text = arraySimulation[0].question!
+        if arraySimulation.count != 0{
+            questionLbl.text = arraySimulation[0].question!
+        }else{
+            questionLbl.text = "There is no question"
+        }
     }
     
     func loadSimulation(){
