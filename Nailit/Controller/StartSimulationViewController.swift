@@ -12,7 +12,7 @@ import AVKit
 import CoreData
 
 class StartSimulationViewController: UIViewController {
-    @IBOutlet weak var fotoDicky: UIImageView!
+   // @IBOutlet weak var fotoDicky: UIImageView!
     
     
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
@@ -69,9 +69,9 @@ class StartSimulationViewController: UIViewController {
     
     
     @IBAction func record(_ sender: AnyObject) {
-        UIView.animate(withDuration: 3, animations: {
-            self.fotoDicky.frame.origin.y -= 400
-        }, completion: nil)
+        //UIView.animate(withDuration: 3, animations: {
+        //    self.fotoDicky.frame.origin.y -= 400
+        //}, completion: nil)
       VideoHelper.startMediaBrowser(delegate: self, sourceType: .camera)
     }
 
@@ -87,7 +87,7 @@ class StartSimulationViewController: UIViewController {
                      }, completion: nil)
         }
         else{
-            questionLbl.text = "Udah kelar woi jangan di next lagi"
+            questionLbl.text = "Finish"
         }
     }
   

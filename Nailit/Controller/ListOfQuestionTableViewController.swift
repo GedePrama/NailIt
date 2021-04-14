@@ -94,6 +94,22 @@ class ListOfQuestionTableViewController: UITableViewController {
     }
     
     
+    override func viewWillAppear(_ animated: Bool) {
+       super.viewWillAppear(animated)
+       navigationController?.navigationBar.prefersLargeTitles = true
+
+       let appearance = UINavigationBarAppearance()
+        appearance.backgroundColor = .white
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.black]
+        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.blue]
+
+        navigationController?.navigationBar.tintColor = #colorLiteral(red: 0.2509803922, green: 0.3137254902, blue: 0.7098039216, alpha: 1)
+       navigationController?.navigationBar.standardAppearance = appearance
+       navigationController?.navigationBar.compactAppearance = appearance
+       navigationController?.navigationBar.scrollEdgeAppearance = appearance
+    }
+    
+    
     // MARK: - Load Data
     
     func loadEverything(){

@@ -32,7 +32,7 @@ class HomeViewController: UIViewController,UICollectionViewDataSource,UICollecti
        navigationController?.navigationBar.prefersLargeTitles = true
 
        let appearance = UINavigationBarAppearance()
-        appearance.backgroundColor = .blue
+        appearance.backgroundColor = #colorLiteral(red: 0.2509803922, green: 0.3137254902, blue: 0.7098039216, alpha: 1)
         appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
         appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
 
