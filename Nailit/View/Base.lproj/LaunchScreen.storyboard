@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NailIt for Colored Background-1" translatesAutoresizingMaskIntoConstraints="NO" id="iEx-dm-kRS">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NailItPutih" translatesAutoresizingMaskIntoConstraints="NO" id="iEx-dm-kRS">
                                 <rect key="frame" x="117" y="403" width="180" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="moT-x7-KxA"/>
@@ -37,6 +37,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="NailIt for Colored Background-1" width="440" height="200"/>
+        <image name="NailItPutih" width="440" height="200"/>
     </resources>
 </document>
