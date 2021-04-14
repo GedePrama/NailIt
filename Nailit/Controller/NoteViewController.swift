@@ -27,7 +27,12 @@ class NoteViewController: UIViewController {
     
     
     
-    
+    @IBAction func doneButton(_ sender: UIBarButtonItem) {
+              
+        let cell = storyboard?.instantiateViewController(identifier: "BookmarkTableViewController") as? BookmarkTableViewController
+        self.navigationController?.pushViewController(cell!, animated: true)
+
+    }
     
     
     

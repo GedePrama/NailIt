@@ -96,7 +96,7 @@
                     <navigationItem key="navigationItem" title="Simulation" id="5ZH-2J-jWk">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="sys-em-kVw">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Dm9-zA-Zu6">
-                                <rect key="frame" x="374" y="10.5" width="20" height="23"/>
+                                <rect key="frame" x="372" y="10.5" width="22" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="clock.arrow.circlepath" catalog="system"/>
                                 <connections>
@@ -132,7 +132,7 @@
                                     <action selector="record:" destination="Cm2-qO-T3V" eventType="touchUpInside" id="VkN-Wr-AdE"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 1" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Mh-gd-qwn">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Mh-gd-qwn">
                                 <rect key="frame" x="24" y="288" width="366" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>

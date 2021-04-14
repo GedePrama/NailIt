@@ -58,15 +58,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="detailQuestionTableView" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Wc9-mo-yvk">
-                                <rect key="frame" x="0.0" y="88" width="394" height="808"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemFillColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="questionExplanation" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="questionExplanation" textLabel="d20-fB-DmN" detailTextLabel="ONt-5Y-gnt" style="IBUITableViewCellStyleSubtitle" id="Sst-RR-dec">
-                                        <rect key="frame" x="0.0" y="28" width="394" height="63.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="63.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Sst-RR-dec" id="nac-Qf-OB6">
-                                            <rect key="frame" x="0.0" y="0.0" width="363" height="63.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="63.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Question" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="d20-fB-DmN">
@@ -87,10 +87,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="notes" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="notes" rowHeight="215" id="KZO-xK-Ofj" customClass="NotesTableViewCell" customModule="Nailit" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="91.5" width="394" height="215"/>
+                                        <rect key="frame" x="0.0" y="91.5" width="414" height="215"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KZO-xK-Ofj" id="t4X-d3-TSj">
-                                            <rect key="frame" x="0.0" y="0.0" width="394" height="215"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="215"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tve-KO-jsV">
@@ -118,7 +118,18 @@
                         <viewLayoutGuide key="safeArea" id="shN-Uy-4fq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="rHQ-sc-hpn"/>
+                    <navigationItem key="navigationItem" id="rHQ-sc-hpn">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="rj5-kX-sXU">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="dvR-h2-JvR">
+                                <rect key="frame" x="302" y="7" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="doneButton:" destination="Idh-uk-PHz" eventType="touchUpInside" id="Ysq-Wc-AiA"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="detailQuestionTableView" destination="Wc9-mo-yvk" id="J7Z-lp-7a4"/>
                         <segue destination="REV-kZ-MVH" kind="show" id="vNj-xz-5Ru"/>
