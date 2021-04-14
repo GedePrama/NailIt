@@ -95,10 +95,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="Simulation" id="5ZH-2J-jWk">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="sys-em-kVw">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Dm9-zA-Zu6">
-                                <rect key="frame" x="302" y="7" width="92" height="30"/>
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Dm9-zA-Zu6">
+                                <rect key="frame" x="374" y="10.5" width="20" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="History"/>
+                                <state key="normal" image="clock.arrow.circlepath" catalog="system"/>
                                 <connections>
                                     <action selector="playVideo:" destination="iBt-Cn-EVr" eventType="touchUpInside" id="Efs-hB-bCD"/>
                                 </connections>
@@ -152,9 +152,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="PGs-Xb-fCA">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="OZ0-rU-18A">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Yqa-fz-buz">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Yqa-fz-buz">
                                 <rect key="frame" x="302" y="7" width="92" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="nextQuestion:" destination="Cm2-qO-T3V" eventType="touchUpInside" id="LKC-68-iTq"/>
@@ -192,6 +193,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="clock.arrow.circlepath" catalog="system" width="128" height="110"/>
         <image name="flag.fill" catalog="system" width="128" height="121"/>
         <namedColor name="AccentColor">
             <color red="0.25098039215686274" green="0.31372549019607843" blue="0.70980392156862748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

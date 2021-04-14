@@ -24,6 +24,13 @@ class NoteViewController: UIViewController {
     
     //Button submit
     
+    
+    
+    
+    
+    
+    
+    
     func saveNote(noteDone: String){
         
         //Cari dulu berdasarkan nspredicatenya
