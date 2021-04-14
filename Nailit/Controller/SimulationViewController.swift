@@ -8,20 +8,27 @@
 import UIKit
 import AVKit
 import MobileCoreServices
+import CoreData
 
 class SimulationViewController: UIViewController {
 
-    @IBOutlet weak var simulationTableView: UITableView!
-   
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    var arraySimulation = [ListOfQuestion]()
     
-    var bookmarks: [BookmarkModel] = [BookmarkModel(id_question: 1, id_bookmark: 1, question: "What makes you unique?"), BookmarkModel(id_question: 2, id_bookmark: 2, question: "If you could change one thing about your personality, what would it be?", notes: "test"), BookmarkModel(id_question: 3, id_bookmark: 3, question: "What hobbies or sports are you involved with outside of work, and why do you enjoy them?")]
+    @IBOutlet weak var simulationTableView: UITableView!
+
+
+    var botrue = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
         simulationTableView.delegate = self
         simulationTableView.dataSource = self
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        loadSimulation()
     }
     
     
@@ -42,7 +49,7 @@ extension SimulationViewController: UITableViewDelegate, UITableViewDataSource {
             return 1
         }
         
-        return bookmarks.count
+        return arraySimulation.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -54,7 +61,7 @@ extension SimulationViewController: UITableViewDelegate, UITableViewDataSource {
         }
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "listOfQuestions", for: indexPath)
-        cell.textLabel?.text = bookmarks[indexPath.row].question
+        cell.textLabel?.text = arraySimulation[indexPath.row].question
         
         return cell
     }
@@ -97,8 +104,39 @@ extension SimulationViewController: UITableViewDelegate, UITableViewDataSource {
         
         return UITableView.automaticDimension
     }
+    
+    
+    func loadSimulation(){
+        let request : NSFetchRequest<ListOfQuestion> = ListOfQuestion.fetchRequest()
+        let bookmarkPredicate = NSPredicate(format: "bookmark == %d", botrue)
+        request.predicate = bookmarkPredicate
+        request.sortDescriptors = [NSSortDescriptor(key: "question", ascending: true)]
+        
+        do {
+            arraySimulation = try context.fetch(request)
+        } catch {
+            print("Error fetching data from context \(error)")
+        }
+        simulationTableView.reloadData()
+    }
   
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 extension SimulationViewController: UIImagePickerControllerDelegate {
     

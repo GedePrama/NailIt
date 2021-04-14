@@ -17,14 +17,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n3g-nf-MDx">
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n3g-nf-MDx">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Simulation" id="r6c-0r-ga0"/>
                                 </items>
                             </navigationBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="w4l-aQ-fnU">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="w4l-aQ-fnU">
                                 <rect key="frame" x="0.0" y="88" width="414" height="698"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemFillColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="aboutSimulation" rowHeight="354" id="oW9-Fc-OKO" customClass="AboutSimulationTableViewCell" customModule="Nailit" customModuleProvider="target">
@@ -68,10 +70,10 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="listOfQuestions" id="XeS-ww-NSs">
-                                        <rect key="frame" x="0.0" y="382" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="382" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XeS-ww-NSs" id="1AO-WT-7hr">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ho-FF-V71">
@@ -90,12 +92,6 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YFe-qJ-6SM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="w4l-aQ-fnU" firstAttribute="leading" secondItem="YFe-qJ-6SM" secondAttribute="leading" id="2Hg-GF-c3f"/>
-                            <constraint firstItem="w4l-aQ-fnU" firstAttribute="trailing" secondItem="YFe-qJ-6SM" secondAttribute="trailing" id="3or-6D-vMn"/>
-                            <constraint firstItem="YFe-qJ-6SM" firstAttribute="bottom" secondItem="w4l-aQ-fnU" secondAttribute="bottom" constant="76" id="CRq-eA-jZD"/>
-                            <constraint firstItem="w4l-aQ-fnU" firstAttribute="top" secondItem="n3g-nf-MDx" secondAttribute="bottom" id="FTd-k1-Fjx"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Simulation" id="5ZH-2J-jWk">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="sys-em-kVw">
@@ -136,13 +132,17 @@
                                     <action selector="record:" destination="Cm2-qO-T3V" eventType="touchUpInside" id="VkN-Wr-AdE"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Mh-gd-qwn">
-                                <rect key="frame" x="109" y="306" width="197" height="48"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question 1" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Mh-gd-qwn">
+                                <rect key="frame" x="51" y="208" width="324" height="217"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="brand ambassador" translatesAutoresizingMaskIntoConstraints="NO" id="1UC-Kp-8tk">
+                                <rect key="frame" x="63" y="900" width="288" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="s6x-bt-HpS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -153,13 +153,20 @@
                                 <rect key="frame" x="302" y="7" width="92" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextQuestion:" destination="Cm2-qO-T3V" eventType="touchUpInside" id="LKC-68-iTq"/>
+                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="fotoDicky" destination="1UC-Kp-8tk" id="td9-rh-mw5"/>
+                        <outlet property="questionLbl" destination="9Mh-gd-qwn" id="RvY-Zu-qfb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5wo-xN-1c7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1416" y="1576"/>
+            <point key="canvasLocation" x="1414.4927536231885" y="1575.6696428571429"/>
         </scene>
         <!--Simulation-->
         <scene sceneID="Ihd-o0-XQR">
@@ -182,6 +189,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="brand ambassador" width="958" height="1022"/>
         <image name="flag.fill" catalog="system" width="128" height="121"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

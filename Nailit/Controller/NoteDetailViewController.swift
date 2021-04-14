@@ -10,17 +10,11 @@ import CoreData
 
 class NoteDetailViewController: UIViewController {
     
-    
-    
-    
-
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var questionDetail1: UILabel!
     @IBOutlet weak var questionDetail2: UILabel!
     
-    
-    
-    
+
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     var arrayNoteDetail = [ListOfQuestion]()
     var question = ""
