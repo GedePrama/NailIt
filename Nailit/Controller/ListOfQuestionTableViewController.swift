@@ -90,6 +90,7 @@ class ListOfQuestionTableViewController: UITableViewController {
         cell?.question = arrayListofQuestion[indexPath.row].question!
         cell?.questionDetail1 = arrayListofQuestion[indexPath.row].questionDetail1!
         cell?.questionDetail2 = arrayListofQuestion[indexPath.row].questionDetail2!
+        cell?.bookmark = arrayListofQuestion[indexPath.row].bookmark
         self.navigationController?.pushViewController(cell!, animated: true)
     }
     
