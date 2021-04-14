@@ -127,14 +127,8 @@
                     <navigationItem key="navigationItem" title="Question Detail" largeTitleDisplayMode="never" id="mtx-es-8lS">
                         <barButtonItem key="rightBarButtonItem" title="Bookmark" id="DBl-Lz-Ey9">
                             <imageReference key="image" image="bookmark" catalog="system" symbolScale="large"/>
-                            <connections>
-                                <action selector="clicked:" destination="n7X-Zz-OIe" id="cvz-2n-ZcH"/>
-                            </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <outlet property="bookmarkLogo" destination="DBl-Lz-Ey9" id="sJk-9I-CQv"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3t5-hu-Ar6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -169,7 +163,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2AQ-L8-4si">
-                                <rect key="frame" x="18" y="497" width="345" height="248"/>
+                                <rect key="frame" x="18" y="508" width="345" height="248"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="color4"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -180,8 +174,15 @@
                         <viewLayoutGuide key="safeArea" id="QWk-bz-pWA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="fL5-Du-vF7"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="fL5-Du-vF7">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="bookmark" catalog="system" id="GLK-GG-uck">
+                            <connections>
+                                <action selector="clicked:" destination="oxx-Dn-UNL" id="7sE-1W-rgY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="bookmarkLogo" destination="GLK-GG-uck" id="ETf-U3-qqZ"/>
                         <outlet property="detailQuestion1" destination="ENo-jk-PNl" id="tFW-1O-hfH"/>
                         <outlet property="detailQuestion2" destination="2AQ-L8-4si" id="1jh-Qf-o6V"/>
                         <outlet property="questionTitle" destination="ct6-ty-Veo" id="Q1C-Nt-Qrj"/>
